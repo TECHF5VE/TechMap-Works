@@ -1,0 +1,24 @@
+/* 所有网站都适用的通用css */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  *::-webkit-scrollbar {
+    color: transparent;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
