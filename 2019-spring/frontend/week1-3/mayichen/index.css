@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    color: blue;
+    font-family: "隶书";
+    font-size: 400%;
+    background-image: url(../../image/标题背景2.jpg);
+}
+
+#picture {
+    width: 300px;
+    height: 260px;
+    float: right;
+    position: relative;
+}
+
+#annotation {
+    color: red;
+    float: right;
+}
+
+#expression {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-left: -380px;
+}
+
+#content {
+    margin-left: 380px;
+}
+
+#information {
+    float: right;
+    width: 360px;
+}
+
+#kuang {
+    padding-top: 200px;
+}
+
+#avatar {
+    float: right;
+    clear: right;
+    width: 380px;
+}
+
+#footer {
+    clear: both;
+    width: 100%;
+}
