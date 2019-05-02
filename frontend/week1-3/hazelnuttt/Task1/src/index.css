@@ -41,10 +41,12 @@
 }
 
 .Card_content {
+  float: left;
   position: relative;
   height: 200px;
   width: 440px;
   margin: 50px 30px;
+  display: block;
 }
 
 .P_avatar img {
@@ -91,12 +93,25 @@
   color: #002140d1;
 }
 
-.trans::after {
-  position: absolute;
+#trans {
+  left: 492px;
+  top: 130px;
+  position: fixed;
   content: '';
-  left: 454px;
-  top: 80px;
   border-right: 15px solid #002140;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
+}
+
+.Card_content1 {
+  position: absolute;
+  height: 200px;
+  width: 440px;
+  margin: 50px 530px;
+  display: none;
+}
+
+.LOGO {
+  text-align: center;
+  line-height: 190px;
 }
