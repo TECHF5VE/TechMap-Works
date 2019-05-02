@@ -1,57 +1,42 @@
-h1 {
-    text-align: center;
-    line-height: 200px;
-    height: 200px;
-    color: blue;
-    font-family: "隶书";
-    font-size: 400%;
-    background-image: url(../../image/标题背景2.jpg);
-}
-
-#picture {
-    width: 300px;
-    height: 260px;
-    float: right;
-    position: relative;
-}
-
-#annotation {
-    color: red;
-    float: right;
-}
-
-#expression {
-    width: 200px;
-    height: 200px;
-    float: right;
-}
-
-#wrapper {
-    float: left;
-    width: 100%;
-    margin-left: -380px;
-}
-
-#content {
-    margin-left: 380px;
-}
-
-#information {
-    float: right;
-    width: 360px;
-}
-
-#kuang {
-    padding-top: 200px;
-}
-
-#avatar {
+#expression{
     float: right;
     clear: right;
-    width: 380px;
+    position: relative;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
-
-#footer {
-    clear: both;
-    width: 100%;
+#frame{
+    background-image: url(../../image/青草背景.jpg);
+    text-align: center;
+    height: 400px;
+    width: 900px;
+    border: 5px solid rgb(44, 37, 37);
+    box-shadow: 10px 10px 5px #888888;
+}
+article {
+    position: fixed;
+    top: 50%;
+    transform: translateY(50%);
+    vertical-align: text-top;
+    position: relative;
+    right: -30%;
+}
+body{
+    text-align: center;
+}
+h2{
+    font-family: 隶书;
+}
+p{
+    font-size: 130%;
+    position: relative;
+    top: 30px;
+}
+a{
+    float: right;
+    position: relative;
+    top: 30px;
+    left: 120px;
 }
