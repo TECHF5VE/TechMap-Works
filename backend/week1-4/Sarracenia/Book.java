@@ -2,17 +2,15 @@ package task1;
 
 import java.util.Scanner;
 
-public class book {
-
+public class Book {
 	private String name;
 	private int ID;
 	private boolean state;    //是否借出的状态
 	private boolean state_initialize;    //是否初始化
-	public book()
-	{
-		
+	public Book()
+	{	
 	}
-	public book(String name,int ID)
+	public Book(String name,int ID)
 	{
 		this.name=name;
 		this.ID=ID;
@@ -27,7 +25,6 @@ public class book {
 		System.out.println("请输入书名");
         Scanner bc = new Scanner(System.in);
         String name=bc.nextLine();
-        //System.out.println(name);
         this.setID(id);
 		this.setname(name);
 		state=false;		
@@ -72,7 +69,6 @@ public class book {
 			{
 			 System.out.println("已经借出");
 			 return false;
-			
 			}
 		else state=true;
 		return true;
@@ -81,10 +77,8 @@ public class book {
 	{
 		if(!state)
 		{
-			
 		 System.out.println("已经还毕");
 		 return false;
-		
 		}
 	else state=false;
 	return true;
