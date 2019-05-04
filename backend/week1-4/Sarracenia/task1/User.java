@@ -2,7 +2,6 @@ package task1;
 
 public class User {
 	private String user_name;
-	//private int user_id;
 	private boolean logstate;
 	private int passport;
 	public User(int passport,String name) {   //创建用户
@@ -17,7 +16,6 @@ public class User {
 	{
 		return logstate;
 	}
-	
 	public boolean login(int passport)   //登录功能
 	{
 		if(!this.Check())
@@ -31,8 +29,7 @@ public class User {
 			else {
 				System.out.println("输入错误");
 				return this.logstate;
-			}
-			
+			}		
 		}
 		else {
 			System.out.println("请勿重复登录");
@@ -42,6 +39,4 @@ public class User {
 	public String getUser_name() {
 		return user_name;
 	}
-	
-
 }
