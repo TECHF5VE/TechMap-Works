@@ -1,0 +1,117 @@
+.bg::after {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 300px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: inherit;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+.bg::before {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  width: 500px;
+  height: 200px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  content: '';
+  /* background-image: inherit; */
+  background-color: rgba(256, 256, 256, 0.7);
+}
+
+.bg {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 300px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: black;
+  /* -webkit-text-fill-color: transparent; */
+  background-image: url('./imgs/wlogo.JPG');
+  -webkit-background-clip: text;
+}
+
+.Card_content {
+  float: left;
+  position: relative;
+  height: 200px;
+  width: 440px;
+  margin: 50px 30px;
+  display: block;
+}
+
+.P_avatar img {
+  position: relative;
+  border-radius: 50%;
+  float: left;
+  margin-top: 5px;
+  margin-right: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.P_baseinfo {
+  position: relative;
+  height: 70px;
+  width: 330px;
+  margin-top: 15px;
+  float: left;
+}
+
+.link :hover {
+  background-color: #eee;
+}
+
+.github {
+  position: relative;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.link {
+  position: relative;
+  margin-top: 30px;
+  margin-right: 30px;
+  float: left;
+}
+
+.P_detailinfo {
+  position: relative;
+  margin-top: 30px;
+  width: 330px;
+  float: left;
+  color: #002140d1;
+}
+
+#trans {
+  left: 492px;
+  top: 130px;
+  position: fixed;
+  content: '';
+  border-right: 15px solid #002140;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.Card_content1 {
+  position: absolute;
+  height: 200px;
+  width: 440px;
+  margin: 50px 530px;
+  display: none;
+}
+
+.LOGO {
+  text-align: center;
+  line-height: 190px;
+}
