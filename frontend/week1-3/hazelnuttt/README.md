@@ -19,6 +19,6 @@
 
 ## Show
 
-![Personal_Card](https://github.com/Hazelnuttt/TechMap-Works/blob/master/frontend/week1-3/hazelnuttt/Task1/dosc/Personal_Card.png)
+![Personal_Card](https://github.com/Hazelnuttt/TechMap-Works/blob/master/frontend/week1-3/hazelnuttt/docs/Personal_Card.png)
 
-![Personal_Card1](https://github.com/Hazelnuttt/TechMap-Works/blob/master/frontend/week1-3/hazelnuttt/Task1/dosc/Personal_Card1.png)
+![Personal_Card1](https://github.com/Hazelnuttt/TechMap-Works/blob/master/frontend/week1-3/hazelnuttt/docs/Personal_Card1.png)
