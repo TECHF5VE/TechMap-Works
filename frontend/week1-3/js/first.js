@@ -11,27 +11,31 @@ function down() {
 function up1() {
     var a = document.getElementById('div1');
     a.style.display = 'block';
-   
+
 };
 
 function down1() {
     var a = document.getElementById('div1');
     a.style.display = 'none';
-    
+
 };
-function up2(){
-    var b=document.getElementById('div2');
-    b.style.display='block';
+
+function up2() {
+    var b = document.getElementById('div2');
+    b.style.display = 'block';
 }
-function down2(){
-    var b=document.getElementById('div2');
-    b.style.display='none';
+
+function down2() {
+    var b = document.getElementById('div2');
+    b.style.display = 'none';
 }
-function up3(){
-    var b=document.getElementById('div3');
-    b.style.display='block';
+
+function up3() {
+    var b = document.getElementById('div3');
+    b.style.display = 'block';
 }
-function down3(){
-    var b=document.getElementById('div3');
-    b.style.display='none';
+
+function down3() {
+    var b = document.getElementById('div3');
+    b.style.display = 'none';
 }
