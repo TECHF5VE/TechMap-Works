@@ -8,6 +8,7 @@
 	<title>myself</title>
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/base.css">
+	<script type="text/javascript" src="../js/first.js"></script>
 </head>
 
 <body>
@@ -22,14 +23,26 @@
 			<div class="head-picture"><img src="../img/headnew.jpg" width="100%" height="100%">
 			</div>
 			<div class="content-footer">
+
 				<div class="content-footer_1">
+					<div id="div1">点我点我!</div>
 					<div class="experience">
 						<a class="link_exp" href="javascript:"
-							onClick="window.open('./exp.html','','height=1000,width=1000,scrollbars=yes,status=yes')">学习经历</a>
+							onClick="window.open('./exp.html','','height=1000,width=1000,scrollbars=yes,status=yes')"
+							onmouseover="up1()" onmouseout="down1()">学习之路</a>
 					</div>
-					<div class="hobby"><a class="hobby_text" href="javascript:"
-							onClick="window.open('./hobby.html','','height=1000,width=1000,scrollbars=yes,status=yes')">兴趣爱好</a>
+
+					<div id="jump">哪个小可爱来看我啦~~</div>
+					<div class="hobby">
+						<a class="hobby_text" href="javascript:"
+							onClick="window.open('./hobby.html','','height=1000,width=1000,scrollbars=yes,status=yes')"
+							onmouseover="up()" onmouseout="down()">兴趣爱好</a>
 					</div>
+
+
+
+
+
 				</div>
 				<div class="content-footer_2">
 					<div class="Name">王莹莹</div>
@@ -46,11 +59,14 @@
 				</div>
 				<div class="content-footer_3">
 					<div class="content-footer_1">
-						<div class="experience"><a class="link_exp" href="javascript:"
-								onClick="window.open('./honor.html','','height=1000,width=1000,scrollbars=yes,status=yes')">个人荣誉</a>
+							<div id="div2">点我点我！</div>
+				<div class="experience"><a class="link_exp" href="javascript:"
+								onClick="window.open('./honor.html','','height=1000,zwidth=1000,scrollbars=yes,status=yes')" onmouseover="up2()" onmouseout="down2()">未来展望</a>
 						</div>
+						<div id="div3">哪个小可爱来看我啦~~</div>
 						<div class="hobby"><a class="hobby_text" href="javascript:"
-							onClick="window.open('./character.html','','height=1000,width=1000,scrollbars=yes,status=yes')">性格特点</a></div>
+								onClick="window.open('./character.html','','height=1000,width=1000,scrollbars=yes,status=yes')" onmouseover="up3()" onmouseout="down3()">性格特点</a>
+						</div>
 					</div>
 				</div>
 			</div>

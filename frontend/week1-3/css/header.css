@@ -87,8 +87,9 @@
 
 
 a:hover {
-	color:red;
+	color: red;
 }
+
 .hobby {
 	margin-top: 20px;
 	width: 200px;
@@ -124,7 +125,7 @@ a:hover {
 	display: flex;
 	margin-top: 10px;
 	font-size: 20px;
-	margin-left: 90px;
+	margin-left: 75px;
 	font-family: 微软雅黑;
 }
 
@@ -138,4 +139,51 @@ a:hover {
 	margin-top: 20px;
 	margin-left: 50px;
 	font-size: 16px;
+}
+
+#jump {
+	float: left;
+	display: none;
+	width: 160px;
+	height: 20px;
+	margin-left: 20px;
+	border: 1px solid gray;
+	border-radius: 25%;
+	text-align: center;
+
+}
+
+#div1 {
+    display:none;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 50px;
+	width: 100px;
+	height: 20px;
+	border: 1px solid gray;
+	border-radius: 25%;
+	text-align: center;
+}
+
+#div2 {
+    display:none;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 50px;
+	width: 100px;
+	height: 20px;
+	border: 1px solid gray;
+	border-radius: 25%;
+	text-align: center;
+}
+#div3 {
+	float: left;
+	display: none;
+	width: 160px;
+	height: 20px;
+	margin-left: 20px;
+	border: 1px solid gray;
+	border-radius: 25%;
+	text-align: center;
+
 }
