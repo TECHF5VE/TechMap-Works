@@ -1,8 +1,13 @@
-package com.company;
+package services;
+import function.AddBook;
+import function.ChangeBook;
+import function.DeleteBook;
+import function.FindBook;
+
 import java.util.Scanner;
 
 public class Users {
-    public static void main(String[] aargs) {
+    public static void main(String[] args) {
         String username = "admin";
         int password = 123456;
         Scanner scanner = new Scanner(System.in);
@@ -13,22 +18,25 @@ public class Users {
         if (str.equals(username) && pas == password) {
             System.out.println("登陆成功！");
             System.out.println("请输入操作选项：1.添加图书，2.删除图书，3.查找图书,4.修改图书。");
-            BookList blist = new BookList();
+            AddBook a = new AddBook();
+            DeleteBook b=new DeleteBook();
+            ChangeBook c=new ChangeBook();
+            FindBook d=new FindBook();
             int t;
             Scanner sd = new Scanner(System.in);
             t = sd.nextInt();
             switch (t) {
                 case 1:
-                    blist.addbook();
+                   a.addbook();
                     break;
                 case 2:
-                    blist.delete();
+                    b.delete();
                     break;
                 case 3:
-                    blist.find();
+                    c.change();
                     break;
                 case 4:
-                    blist.change();
+                    d.find();
             }
         } else {
             System.out.println("用户名或密码错误！");
