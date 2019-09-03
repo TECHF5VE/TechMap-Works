@@ -1,0 +1,428 @@
+@CHARSET "UTF-8";
+body {
+    background-color: #f2f2f2;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    padding: 1em 0;
+    width: 100%;
+}
+
+.header a, .ui-link {
+    color: #666;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header .glyphicon {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.user_box {
+    width: 100%;
+    padding: 2.2em 0;
+}
+
+.avatar {
+    border: 2px solid #999;
+    border-radius: 50%;
+    padding: .8em;
+}
+
+.username {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 20px;
+    font-size: 1.2em;
+    color: #999;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+.menu {
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0 0 1px #fff;
+}
+
+.menu a {
+    color: #333;
+    padding: 1em 0;
+    font-size: 1em;
+    display: block;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.ui-loader h1 {
+    display: none;
+}
+
+.avatar_ {
+    border-radius: 50%;
+    margin-top: 15px;
+    width: 44px;
+    height: 44px;
+}
+
+.content-reply-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-reply-box li {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+}
+
+.content-reply-box li.odd .user {
+    float: left;
+    margin-right: 10px;
+}
+
+.content-reply-box li.even .user {
+    float: right;
+    margin-left: 10px;
+}
+
+.content-reply-box li.even .reply-content {
+    float: right;
+}
+
+.content-reply-box li.odd .reply-content-box {
+    margin-left: 60px;
+}
+
+.content-reply-box li.even .reply-content-box {
+    margin-right: 60px;
+}
+
+.user-name {
+    color: #999;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    width: 45px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.reply-time {
+    color: #e1912d;
+    font-size: .85em;
+    display: inline-block;
+    width: 100%;
+}
+
+.content-reply-box li.odd .reply-time {
+    text-align: left;
+}
+
+.content-reply-box li.even .reply-time {
+    text-align: right;
+}
+
+.reply-content {
+    border: 1px solid #fcfcfc;
+    padding: .6em;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
+    word-break: break-all;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    min-width: 200px;
+}
+
+.content-reply-box li.odd .arrow {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: transparent #fff transparent transparent;
+    border-width: 6px;
+    border-style: dashed solid dashed dashed;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -12px;
+    z-index: 999;
+}
+
+.content-reply-box li.even .arrow {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: transparent transparent transparent #fff;
+    border-width: 6px;
+    border-style: dashed dashed dashed solid;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -12px;
+    z-index: 999;
+}
+
+.operating {
+    border-top: 1px solid #ccc;
+}
+
+.operating li {
+    border-right: 1px solid #ccc;
+}
+
+.operating a {
+    padding: 0.85em 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.pr {
+    position: relative;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.mg10 {
+    margin-top: 10px;
+}
+
+.linear-g {
+    background: -moz-linear-gradient(top, #fdfdfd, #f6f6f6);
+    background: -webkit-gradient(linear, top, from(#fdfdfd), to(#f6f6f6));
+    background: -webkit-linear-gradient(top, #fdfdfd, #f6f6f6);
+    background: -o-linear-gradient(top, #fdfdfd, #f6f6f6);
+    box-shadow: 0 0 5px #ccc;
+}
+
+#show_content {
+    width: 100%;
+    height: 380px;
+    overflow-y: auto;
+}
+
+.btn_1 {
+    float: right;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.send_div {
+    width: 100%;
+    position: relative;
+}
+
+.div_left {
+    width: 100%;
+    float: left;
+}
+
+.div_left textarea {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    font-size: 14px;
+    color: #666;
+    resize: none;
+}
+
+.fixed_ {
+    position: fixed;
+    z-index: 99999;
+}
+
+.join_li {
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.login_fm {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.head_div {
+    width: 50px;
+    height: 44px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#showHead {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.right_btn {
+    width: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+.show_image {
+    width: 65%;
+    height: 65%;
+}
+
+.reply-content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user-list {
+    position: absolute;
+    z-index: 1000;
+    left: 15px;
+}
+
+.avatar_list {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.name_list {
+    width: 100px;
+    line-height: 30px;
+    margin-left: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.settings {
+    position: absolute;
+    right: 15px;
+}
+
+.login_avatar {
+    cursor: pointer;
+}
+
+.login_avatar img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 5px #999;
+}
+
+.avatar_list_div {
+    top: 100%;
+    left: 50%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.avatar_list_div img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.avatar_list_div img:hover {
+    border: 1px solid #ef4e4a;
+}
+
+#username {
+    width: 180px;
+    margin: 10px auto;
+}
+#password {
+    width: 180px;
+    margin: 10px auto;
+}
+
+#login {
+    height: 360px;
+    padding-top: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.login-name {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.toUserList {
+    position: absolute;
+    width: 160px;
+    max-height: 180px;
+    line-height: 30px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #fff;
+    overflow-y: scroll;
+    z-index: 99999;
+    bottom: 0;
+}
+
+.toUserList ul {
+    margin-left: 15px;
+}
+
+.toUserList li {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.toUserList a {
+    color: #333;
+    font-weight: normal;
+}
+
+.sys_message {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    padding: 0.35em 0.6em;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+#settings-menu li {
+    margin-left: 10px;
+}
+
+#settings-menu li i, span {
+    font-size: 13px;
+}
