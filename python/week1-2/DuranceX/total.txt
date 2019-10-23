@@ -1,0 +1,65 @@
+﻿#1.dict的使用
+dict={'Name':'Zara','Age':7,'Class':'First'}
+dict['School']='DPS School'
+dict['Age']=12
+dict.pop('Class')
+for x in dict:
+	print('dict[\''+x+'\']: ',dict[x])
+
+
+MD:
+在同时print str和int型变量时一开始的格式出现了错误，通过多次尝试解决了问题
+#2.函数
+##1.编写一个函数，输入n为偶数时，调用函数求1/2+1/4+...+1/n,当输入n为奇数时，调用函数1/1+1/3+...+1/n
+def x_sum(n):
+	sum1=0
+	if(n%2==0):
+		x=2
+		while x<=n:
+			sum1=sum1+1/x
+			x=x+2
+		return sum1
+	else:
+		x=1
+		while x<=n:
+			sum1=sum1+1/x
+			x=x+2
+		return sum1
+
+MD：
+习惯了c++的语法，在if和else后经常忘记加：在语句结束后习惯性添加；
+##2.定义一个函数，输入不定个数的数字，返回所有数字的和。
+def list_sum(*args):
+	sum1=0
+	for number in args:
+		sum1=sum1+number
+	return sum1
+	
+
+MD：
+不知道怎么样才能读取多个形参，在查阅了资料后（“https://blog.csdn.net/u012102306/article/details/52250028”）知道了“*”的作用，并通过使用“*”解决了问题
+
+#3文件操作
+##直接在D盘建立一个“test.txt”文件
+path="D:\\"
+full_path=path+'test.txt'
+file=open(full_path,'w')
+a='''一张褪色的照片，
+    好像带给我一点点怀念。
+    巷尾老爷爷卖的热汤面，
+    味道弥漫过旧旧的后院；
+    流浪猫睡熟在摇晃秋千，
+    夕阳照了一遍他咪着眼；
+    那张同桌寄的明信片，
+    安静的躺在课桌的里面。'''
+file.write(a)
+file.close()
+file=open(full_path,'r')
+file.read()
+file.close()
+file=open(full_path,'r')
+file.readline()
+file.close
+with open(full_path,'r') as file:
+		print(file.readlines())
+	

@@ -1,0 +1,21 @@
+table {
+    font-size: 18px;
+    line-height: 2em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+caption {
+    font-size: 38px;
+    font-weight: blod;
+    letter-spacing: 12px;
+    line-height: 2.5em;
+}
+
+.t1 {
+    background-color: #FFF
+}
+
+.t2 {
+    background-color: #CCCCCC
+}
