@@ -14,5 +14,5 @@
 ![](http://ww2.sinaimg.cn/bmiddle/9150e4e5gy1g5bpn2y50mj203z05ia9w.jpg)
 ![](https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1728923212,3497679706&fm=26&gp=0.jpg)
 ***
-~~[^以上纯属玩笑话]~~
+~~^以上纯属玩笑话~~
 今天也是任务满满的一天呢
