@@ -1,0 +1,14 @@
+<center><font color=pink size=72>自我介绍</font></center>
+你好，我叫 __杜云龙__ ，物联网1901,爱好写不下,缺点：画画和身体上肢力量（在练了）我想赚钱所以来学计算机了，要不然能躺着睡觉我还活动（指一切）什么.
+
+---
+
+
+#<font color=red size=36>前进！前进！不择手段地前进！</font>
+<center>  <font size=36>学习过程中的问题 </font></center>
+
+
+1. 好像没啥问题
+	>hello world！ 试试 嘿嘿嘿
+
+#搞了半天发现什么都想学
