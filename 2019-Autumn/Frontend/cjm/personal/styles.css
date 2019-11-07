@@ -1,0 +1,44 @@
+h1 {
+    color: #330099;
+  }
+  .one {
+    color: orange;
+    font-weight: bold;
+  }
+  li em {
+    color: rebeccapurple;
+    font-weight: bold;
+  }
+  body
+  { 
+    background-image:url('./背景.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  body {
+    font: 1em/150% Helvetica, Arial, Cursive ;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 33em;
+  }
+  .two {
+    color:#003366	;
+    font-weight: bold;
+  }
+  .three {
+    color:	#D80000;
+    font-weight: bold;
+  }
+  .four {
+    color:#006600;
+    font-weight: bold;
+  }
+  .five {
+    color:#993366;
+    font-weight: bold;
+  }
+  h1 {font-family: Cursive;}
+  .six {
+    color:#660066;
+    font-weight: bold;
+  }
