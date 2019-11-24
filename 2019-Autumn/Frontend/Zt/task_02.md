@@ -12,4 +12,4 @@
 ### 预览图
 ![效果图](2.png)
 #### 地址
-https://github.com/syntou/TechMap-Works/tree/master/2019-Autumn/Frontend/Zt/task_02
+https://github.com/syntou/start/tree/master/Desktop/gityeah/start
