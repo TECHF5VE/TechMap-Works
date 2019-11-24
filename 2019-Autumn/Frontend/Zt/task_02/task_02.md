@@ -9,4 +9,7 @@
   这个过程就耗费了很多时间。
   还有就是审美问题，做出来的东西跟自己脑子里想的不一样。
   没了。
-
+### 预览图
+![效果图](2.png)
+#### 地址
+https://github.com/syntou/TechMap-Works/tree/master/2019-Autumn/Frontend/Zt/task_02
