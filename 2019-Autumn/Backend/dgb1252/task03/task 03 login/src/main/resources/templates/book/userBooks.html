@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>我的喜爱</h3>
+<table border="1">
+    <tr>
+        <th>序列号</th>
+        <th>书名</th>
+        <th>描述</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="book:${books}">
+        <td th:text="${book.getId()}"></td>
+        <td th:text="${book.getBook_name()}"></td>
+        <td th:text="${book.getDescription()}"></td>
+        <td>
+            <a th:href="@{'Book/'+${book.getId()}}">
+                <button>删除</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<a href="/Book">
+    <button>查看总书籍</button>
+</a>
+<br>
+<a th:href="@{/main}">
+    <button>返回首页</button>
+</a>
+</body>
+</html>

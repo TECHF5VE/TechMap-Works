@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4 th:text="${session.user.username}+'登陆成功'"></h4>
+<a href="/cancellation">
+    <button >注销</button>
+</a>
+<br>
+<a href="/Book">
+    <button >查看书籍</button>
+</a>
+</body>
+</html>

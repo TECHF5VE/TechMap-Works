@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>序列号</th>
+        <th>书名</th>
+        <th>描述</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="book:${books}">
+        <td th:text="${book.getId()}"></td>
+        <td th:text="${book.getBook_name()}"></td>
+        <td th:text="${book.getDescription()}"></td>
+        <td>
+            <form th:action="@{${session.user.getId()}+'/Book/'+${book.getId()}}" method="post">
+                <input type="submit" value="添加">
+            </form>
+        </td>
+    </tr>
+    <a th:href="@{${session.user.getId()+'/Book'}}">
+        <button>我的喜爱</button>
+    </a>
+</table>
+<h6 style="color: red"  th:text="${msg}"></h6>
+</body>
+</html>
