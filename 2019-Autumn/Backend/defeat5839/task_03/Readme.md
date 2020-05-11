@@ -1,109 +1,328 @@
-# 二叉树 & Web基础
->你知道windows对进程地址空间的管理和linux中ext3文件系统目录管理和完全公平调度器(CFS)是用到什么实现的么?
-##2019-Autumn纳新考核 task-03
-## 任务目的
-- 了解`二叉树`的定义和使用，再进一步去了解熟悉`二叉搜索树`等具有特殊特征二叉树的特性。  
-- 踏入`Web`的世界,了解`HTTP请求和响应`留有基础概念,并能用熟悉的语言完成对简单的网页请求和响应。
-## 任务说明
-- 本任务是面向零基础的同学，如果已经有一定的基础，可以尽快完成，并给予我们反馈，我们将会针对你们的反馈做进度和内容上的调整。
-- 鉴于各种原因第三次考核任务我一再鸽到今天，相信大家在延迟开学疫情期间在家肯定有自己学习以及在家里的可支配时间更多所以本次任务内容会多一些，时间也会更宽松一些。
-## 任务时间
-预计4周时间
-于5月11日之前完成
+# task_03学习笔记：
 
-__注： 起始时间为该md文档上传至[仓库](https://github.com/TECHF5VE/TechMap)的时间__
-## 任务内容
+## 二叉树的存储结构
 
-学习`二叉树`的创建和遍历等基本操作，再学习一些具有特殊特征二叉树，例如`二叉搜索树`,若好奇也可以继续深入学习`AVL树`、`红黑树`的相关知识但对此本次考核不做要求。
+```
+typedef struct BiNode
+{
+   TElemType data;
+   struct BiNode *Left,*Right;
+}*BiTree,BiTNode;
+```
 
-2. 了解`HTTP请求和响应`是什么,学习简单的客户端发起请求，服务端做出响应。
-3. 把对任务的心得以及学习笔记均写在README.md中并且完成下面任务作业中的题目，将源代码上传至[仓库](https://github.com/TECHF5VE/TechMap-Works)。
+## 二叉树的遍历
 
-## 任务作业
->请务必仔细阅读[仓库说明](https://github.com/TECHF5VE/TechMap-Works/blob/master/README.md)，了解相关提交的格式。今后的任务也会发布在相应的[仓库](https://github.com/TECHF5VE/TechMap)
+**1 先序遍历**
 
-1.通过给定的一段字符串依次输入建立一颗二叉树并使用递归前序、中序、后序遍历这棵二叉树。
-    
+①访问根节点
 
-    样例:
-    依次输入 ABD##E##CF###   #代表为空
-    
-    应生成的二叉树如下:
-                           
-                A
-              /   \
-            B       C
-          /  \     /
-         D    E   F   
+②先序遍历左子树
 
-   
+③先序遍历右子树
 
+```
+void PreOrderTraversal(BiTree BT)
+{
+     if(BT)
+     {
+        cout<<BT->data;
+        PreOrderTraversal(BT->Left);
+        PreOrderTraversal(BT->Right);
+     }
+}
+```
 
-2.给定一个二叉树，层序遍历它。
+![](https://raw.githubusercontent.com/defeat5839/PicGo/master/20200414201132.png?token=ANS5YNBDDAIL4R7JBHPHQQS6SWULG)
 
--说明:层序遍历即逐层从左到右遍历一个二叉树。
-    
-    样例: 
-    给定的二叉树如下:                   
-                A
-              /   \
-            B       C
-          /  \     /
-         D    E   F
-    
-    最后输出为: ABCDEF            
+①中序遍历左子树
 
-3.给你 a 和 b 这两棵二叉搜索树，请你返回这两棵二叉树上所有整数的升序序列。
+②访问根节点
 
-  提示:
-   - 建议你能充分利用二叉搜索树的特性并实现出时间复杂度为O(m+n)的算法。
-   - 回想一下上次考核的题目，能受到一些启发么?
+③中序遍历右子树
 
-    样例: 
-    给定的a二叉树如下:                      给定的a二叉树如下:        
-                4                               2
-              /   \                            /  \
-            2       6                        0      8
-          /  \     /
-         1   3    5
-    
-    最后输出的序列为: 012234568            
-4.在不改变一棵二叉树中其他节点中序遍历顺序的条件下删除二叉树中指定的任意节点。
+```
+void InOrderTraversal(BiTree BT)
+{
+     if(BT)
+     {
+        InOrderTraversal(BT->Left);
+        cout<<BT->data;
+        InOrderTraversal(BT->Right);
+     }
+}
+```
 
-    样例: 
-    给定的二叉树如下:                   
-                A
-              /   \
-            B       C
-          /  \     /
-         D    E   F
-    
-    中序遍历输出为: DBEAFC
-    删除节点B后中序遍历输出为:DEAFC      
+![中序遍历流程图](https://raw.githubusercontent.com/defeat5839/PicGo/master/20200413134915.png?token=ANS5YNDMYPKEJNS5H2RED2S6SP62A)
 
- 5.实现一个简单的登录功能
-    
-   说明：
-   - 要求实现通过网页发起请求登录，然后服务端进行判断后响应是否登录成功。
-   - 前端网页的美观不做要求，可以借鉴网上页面的样式。
-   - 服务端最好可以连接数据库进行账号密码的匹对。
+**3 后序遍历**
 
->本次任务要求将实现`二叉树`的`类`/`结构体`以及解决问题的函数打包于一个源文件中上传提交。
+①后序遍历左子树
 
->任务5的项目文件单独建立文件夹上传,如果实现了连接数据库功能，注明所使用的数据库以及对应的sql建表脚本。
+②后序遍历右子树
 
->(对完成任务使用的语言不强制要求，实现登录页面的任务最好使用出题人熟悉的Java)
+③访问根节点
 
-6.超星学习通自动签到。(可选)
+```
+void PostOrderTraversal(BiTree BT)
+{
+     if(BT)
+     {
+        PostOrderTraversal(BT->Left);
+        PostOrderTraversal(BT->Right);
+        cout<<BT->data;
+     }
+}
+```
 
-   通过抓包来分析超星学习通的接口实现自动签到。
+![后序遍历流程图](https://raw.githubusercontent.com/defeat5839/PicGo/master/20200413135512.png?token=ANS5YNCD2PV3SNME3AKVO2K6SP7QA)
 
-   说明:
+**4  层序遍历**
 
-   - 该任务不是鼓励大家不好好上网课旷课，只是仅用于一个能让你感兴趣的学习用途。(逃)
-### 参考资料
-- [数据结构可视化学习工具网站](https://visualgo.net/zh)
-- [中国大学MOOC](https://www.icourse163.org/)
-- [大话数据结构 提取码：Z8K9](https://pan.baidu.com/share/init?surl=IbrzXB0Truoy0roFiSIM3w)
-- [fiddler-抓包用的工具](https://www.telerik.com/fiddler)
+①根节点入队，并用front指针标记
 
+②队头出队，并将左右孩子拉进队列
+
+③重复①②，直到队列为空
+
+```
+#include<queue>
+void LevelOrderTraversal(BiTree BT)
+{
+  if(BT==NULL)  return;
+  queue<BiNode*> q;
+  q.push(BT);
+  while(!q.empty())
+  {
+     BiNode *front=q.front();
+     q.pop();
+     cout<<front->data;
+     if(front->Left)
+     {
+        q.push(front->Left);
+     }
+     if(front->Right)
+     {
+        q.push(front->Right);
+     }
+  }
+}
+```
+
+![](https://raw.githubusercontent.com/defeat5839/PicGo/master/20200414202536.png?token=ANS5YNHXHIBMPGSPS2S6KK26SWWAA)
+
+## 二叉树的建立
+
+其实建立二叉树，也是利用了**递归**的原理。只不过在原来应该是打印结点的地方，改成了生成结点、给结点赋值的操作而已。
+
+```
+void CreatBiTree(BiTree &T)
+{
+   char ch;
+   cin>>ch;
+   if(ch=="#")
+   {
+      (*T)=NULL;
+   }
+   else
+   {
+      *T=new BiTNode;
+      if(!*T)
+      {
+         exit(OVERFLOW);
+      }
+      (*T)->data=ch;
+      CreatBiTree(&(*T)->Left);
+      CreatBiTree(&(*T)->Right);
+   }
+}
+```
+
+注：对二叉树的使用，主要是调用一个指向根节点的指针来实现的。因为函数传参是单向值传递，所以想改变指针的值的话，则必须传递**二重指针**
+
+## 二叉搜索树
+
+（二叉排序树、二叉查找树）
+
+1、二叉树为空
+
+2、（1）非空左子树的所有键值**小于**其根结点的键值
+
+（2）非空右子树的所有键值**大于**其根结点的键值
+
+（3）左、右子树都是二叉搜索树
+
+![](https://raw.githubusercontent.com/defeat5839/PicGo/master/20200415001134.png?token=ANS5YNF24JFP2YCUNNJN2AS6SXQPO)
+
+#### 特别函数
+
+```
+//查找函数
+Position Find(ElementType X,BiTree BST);//从二叉树中查找元素X，并返回所在结点的地址
+Position FindMin(BiTree BST);//从二叉树中查找并返回最小元素所在结点的地址
+Position FindMax(BiTree BST);//从二叉树中查找并返回最大元素所在结点的地址
+//插入函数
+BiTree Insert(ElementType X,BiTree BST);
+//删除函数
+BiTree Delete(ElementType X,BiTree BST);
+```
+
+#### 二叉搜索树的查找：Find
+
+`查找的效率决定于树的高度`
+
+（1）查找从**根结点**开始，如果树为空，返回NULL;
+
+（2）如果搜索树非空，则根结点和X进行比较，
+
+​      ①若X**小于**根结点键值，只需在**左子树**继续搜索；
+
+​      ②若X**大于**根结点键值，只需在**右子树**继续搜索；
+
+​      ③若两者结果是**相等**的，搜索完成，返回指向此结点的指针;
+
+```
+//尾递归...效率不高，尾递归都可以用循环来代替
+Position Find(ElementType X,BiTree BST)
+{
+   if(!BST)  return NULL;//查找失败
+   if(X>BST->data)
+      return Find(x,BST->Right);
+   else if(X<BST->data)
+      return Find(x,BST->Light);
+   else 
+      return BST;
+}
+```
+
+```
+//循环  ...
+Position Find(ElementType X,BiTree BST)
+{
+   while(BST)
+   {
+      if(X>BST->data)
+         BST=BST->Right;
+      else if(X<BST->data)
+         BST=BST->Left;
+      else 
+         return BST;
+   }
+   return NULL;
+}
+```
+
+**寻找最小值**
+
+```
+//用递归
+Position FindMin(BiTree BST)
+{
+   if(!BST)  return NULL;
+   else if(!BST->Left)
+          return BST;//找到根结点并返回
+   else
+       return FindMin(BST->Left);//沿左分支继续查找
+}
+
+//用循环
+Position FindMin(BiTree BST)
+{
+   if(BST)  
+     while(BST->Left)
+     {
+        BST=BST->Left;//一直到最左
+     }
+     return BST; 
+}
+```
+
+**寻找最大值**
+
+```
+//用递归
+Position FindMax(BiTree BST)
+{
+   if(!BST)  return NULL;
+   else if(!BST->Right)
+          return BST;//找到根结点并返回
+   else
+       return FindMax(BST->Right);//沿左分支继续查找
+}
+
+//用循环
+Position FindMin(BiTree BST)
+{
+   if(BST)  
+     while(BST->Right)
+     {
+        BST=BST->Right;//一直到最右
+     }
+   return BST; 
+}
+```
+
+### 二叉搜索树的插入
+
+```
+BiTree Insert(ElementType X,BiTree BST)
+{
+   if(!BST)//若树为空，返回一个结点的二叉搜索树
+   {
+      BST=new BiNode;
+      BST->data=X;
+      BST->Left=BST->Right=NULL;
+   }
+   else
+   {
+      if(X<BST->data)
+      {
+         BST->Left=Insert(X,BST->Left);
+      }
+      else if(X>BST->Right)
+      {
+         BST->Right=Insert(X,BST->Right);
+      }
+      //else X已经存在
+   }
+   return BST;
+}
+```
+
+**删除函数**
+
+分三种情况：
+
+1、要删除的是**叶结点**：直接删除，并再修改其父结点指针--置为**NULL**
+
+2、要删除的结点**只有一个孩子**结点：将其父结点的指针指向要删除结点的孩子结点
+
+3、要删除的结点有左、右两颗子树：①取右子树的最小元素代替。②取左子树的最大元素代替。
+
+```
+BiTree Delete(ElementType X,BiTree BST)
+{
+   Position Temp;
+   if(!BST)cout<<"要删除的元素未找到"<<endl;
+   else if(X<BST->data)//左子树递归删除
+       BST->Left=Delete(X,BST->Left);
+   else if(X>BST->data)//左子树递归删除
+       BST->Right=Delete(X,BST->Right);
+   else//找到要删除的结点
+       if(BST->Left&&BST->Right)//被删除的结点有左右两棵子树
+         {
+            Temp=FindMin(BST->Right);//在右子树中找到最小的元素填充到被删除的结点位置
+            BST->data=Temp->data;
+            BST->Right=Delete(X,BST->Right);/*在删除结点的右子树删除最小元素，因为填充到被删除结点的地方了*/
+         } 
+       else//被删除结点有一个或无子结点
+        {
+            Temp=BST;
+            if(!BST->Left)   BST=BST->Right;//有右孩子或无孩子
+            else if(!BST->Right)   BST=BST->Left;//有左孩子或无孩子
+            delete Temp;
+        }
+   return BST;
+}
+```
+
+补充：因为能力有限，任务5--实现一个简单的登录功能，并未能完成。
