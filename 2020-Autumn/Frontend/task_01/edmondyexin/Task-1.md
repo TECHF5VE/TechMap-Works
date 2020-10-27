@@ -1,7 +1,6 @@
 <center>
      <h1>王文卓</h1>
-     <div>
-         <span>
+</center>
 
 
  ##  个人信息 
