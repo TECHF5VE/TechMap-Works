@@ -1,0 +1,3 @@
+# 自我介绍  
+大家好，我是来自计院软件3班的**沈李**，很高兴来到*TECHF5VE*接触各位大佬。平时空闲的时候会玩一会儿**游戏**，也会玩一玩**魔方**。当然，我平时还是会敲敲**代码**的😏。  
+ <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3768739471,1786897474&fm=26&gp=0.jpg" width = "450" height = "275" /> <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2812392003,387200502&fm=26&gp=0.jpg" width = "250" height = "275" />  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603712894852&di=724c9a5a7a1919999db56057c55784ac&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181026%2F07a2bd062582412fbd0690505fa612d3.gif" width ="230" height = "275" />
