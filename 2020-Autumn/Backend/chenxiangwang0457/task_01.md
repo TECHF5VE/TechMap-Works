@@ -7,6 +7,5 @@
 ---
 ## 其他
 通过十几天的学习，我现在快要把函数学完，这里就不献丑了~~~
-### 我的bilibili主页
-
-【常常望000】（https://space.bilibili.com/351992038）
+### 我的bilibili主页 [常常望000]（https://space.bilibili.com/351992038）
+！[图片]
