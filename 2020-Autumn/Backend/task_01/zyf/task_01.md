@@ -31,13 +31,3 @@ print("hello world")
 system.out.println(hello world");
 printf("hello world");
 ```
-
-```flow
-st=>start: start
-op=>operation: 学习Markdown
-cond=>condition: 会 or 不会?
-e=>end
-st->op->cond
-cond(学会了)->e
-cond(学废了)->op
-```
