@@ -10,7 +10,7 @@
 github是英文网站|用翻译插件
 不会用vscode|上网找教程
 ---
-#收获
+# 收获
 - 大致明白了git,github工作方式
 - 学会了基本markdown语法
 - 学会了vscode的基本用法
