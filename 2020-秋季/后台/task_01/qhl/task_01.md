@@ -24,7 +24,6 @@ print("To be honest, it\'s an amazing experience to learn Git and have a Github 
 	return 0;
  }
 ```
- --- 
 
 I want to have the capacity of counting bank notes just like the programme above in spite of there being a **limit** for it.   
 Perhaps someday I will also gain the equivalent wealth,when that girl stands by me and parents smile on me.
