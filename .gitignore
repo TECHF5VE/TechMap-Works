@@ -1,3 +1,4 @@
 *.pyc
 **/.vscode
 **/.idea
+!/task_02/.cpp
