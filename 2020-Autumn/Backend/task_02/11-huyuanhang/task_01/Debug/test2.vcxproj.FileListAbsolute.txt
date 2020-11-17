@@ -1,0 +1,2 @@
+D:\c语言\hu的c++\test2\Debug\test2.exe
+D:\c语言\hu的c++\test2\Debug\test2.pdb
