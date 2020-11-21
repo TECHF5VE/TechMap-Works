@@ -3,14 +3,26 @@
 using namespace std;
 void merge(int* a, int m, int* b, int n) {
 	a = new int[m + n];
-	srand(time(0));
+	cout << "请输入数组a的元素" << endl;
 	for (int i = 0; i < m; i++)
-		a[i] = rand() % 10;
+		cin >> a[i];
 	b = new int[n];
+	cout << "请输入b数组的元素" << endl;
 	for (int i = 0; i < n; i++)
-		b[i] = rand() % 10;//分别定义合并前的a，b两数组并随机赋值；
+		cin >> b[i];//分别定义合并前的a，b两数组并随机赋值；
 	for (int i = m, t = 0; i < (m + n) && t < n; i++ && t++)
 		a[i] = b[t];
+	int temp;
+	for (int i = 0; i < (m + n); i++)
+		for (int j = 0; j < (m + n); j++)
+		{
+			if (a[i] < a[j])
+			{
+				temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+			}
+		}
 	for (int i = 0; i < (m + n); i++)
 		cout << a[i] << " ";
 	cout << endl;
