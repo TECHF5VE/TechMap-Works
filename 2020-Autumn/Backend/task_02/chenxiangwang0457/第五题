@@ -18,12 +18,12 @@ int** creatArray(int m,int n)
 		}
 	}
 	pt = array;
-	return pt;
 	for (i = 0;i < m;i++)
 	{
 		free(array[i]);
 	}
 	free(array);
+	return pt;
 }
 void main() {
 	int** p, i, j;
