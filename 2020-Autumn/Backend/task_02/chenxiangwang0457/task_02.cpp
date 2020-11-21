@@ -1,6 +1,7 @@
-第一题
+//第一题
 #include<stdio.h>
 #include<stdlib.h>
+#include<malloc.h>
 void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
 {
 	int i, j=0;
@@ -38,10 +39,7 @@ void main(){
 
 
 
-第二题
-#include<stdio.h>
-#include<stdlib.h>
-#include<malloc.h>
+//第二题
 void rotate(int** matrix, int matrixSize, int* matrixColSize)
 {
 	int i, j;
@@ -105,9 +103,7 @@ int main() {
 
 
 
-第三题
-#include<stdio.h>
-#include<stdlib.h>
+//第三题
 void travelsall(int* a, int n) {
 	int i;
 	for (i = 0;i <= n - 1;i++)
@@ -124,10 +120,7 @@ void main() {
 
 
 
-第四题
-#include<stdio.h>
-#include<stdlib.h>
-#include<malloc.h>
+//第四题
 int* creatArray(int n)
 {
 	int* array, i, *pt;
@@ -153,10 +146,7 @@ void main() {
 
 
 
-第五题
-#include<stdio.h>
-#include<stdlib.h>
-#include<malloc.h>
+//第五题
 int** creatArray(int m,int n)
 {
 	int i, j;
