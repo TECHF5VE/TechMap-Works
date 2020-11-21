@@ -1,3 +1,4 @@
+第一题
 #include<stdio.h>
 #include<stdlib.h>
 void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
@@ -37,7 +38,7 @@ void main(){
 
 
 
-
+第二题
 #include<stdio.h>
 #include<stdlib.h>
 #include<malloc.h>
@@ -104,7 +105,7 @@ int main() {
 
 
 
-
+第三题
 #include<stdio.h>
 #include<stdlib.h>
 void travelsall(int* a, int n) {
@@ -123,7 +124,7 @@ void main() {
 
 
 
-
+第四题
 #include<stdio.h>
 #include<stdlib.h>
 #include<malloc.h>
@@ -152,7 +153,7 @@ void main() {
 
 
 
-
+第五题
 #include<stdio.h>
 #include<stdlib.h>
 #include<malloc.h>
