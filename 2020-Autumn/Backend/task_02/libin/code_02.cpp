@@ -92,7 +92,7 @@ void creatbig(int m, int n) {
 			a[i][j] = g;
 			g++;
 		}//为m*n长度的数组赋值至m*n；没用第三次嵌套；
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
 		{
