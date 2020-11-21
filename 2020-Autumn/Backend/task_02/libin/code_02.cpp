@@ -9,9 +9,9 @@ void merge(int* a, int m, int* b, int n) {
 	b = new int[n];
 	cout << "请输入b数组的元素" << endl;
 	for (int i = 0; i < n; i++)
-		cin >> b[i];//分别定义合并前的a，b两数组并随机赋值；
+		cin >> b[i];
 	for (int i = m, t = 0; i < (m + n) && t < n; i++ && t++)
-		a[i] = b[t];
+		a[i] = b[t];//赋值；
 	int temp;
 	for (int i = 0; i < (m + n); i++)
 		for (int j = 0; j < (m + n); j++)
@@ -22,7 +22,7 @@ void merge(int* a, int m, int* b, int n) {
 				a[i] = a[j];
 				a[j] = temp;
 			}
-		}
+		}//排序；
 	for (int i = 0; i < (m + n); i++)
 		cout << a[i] << " ";
 	cout << endl;
