@@ -3,11 +3,11 @@
 using namespace std;
 void merge(int* a, int m, int* b, int n) {
 	a = new int[m + n];
-	cout << "请输入数组a的元素" << endl;
+	cout << "请输入数组a的"<<m<<"个元素" << endl;
 	for (int i = 0; i < m; i++)
 		cin >> a[i];
 	b = new int[n];
-	cout << "请输入b数组的元素" << endl;
+	cout << "请输入数组b的"<<n<<"个元素" << endl;
 	for (int i = 0; i < n; i++)
 		cin >> b[i];
 	for (int i = m, t = 0; i < (m + n) && t < n; i++ && t++)
