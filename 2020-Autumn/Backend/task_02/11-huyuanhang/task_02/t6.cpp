@@ -6,7 +6,7 @@ using namespace std;
 int climbstairs(int n)
 {
 	if (n == 1)return 1;
-	else if (n == 2)return 3;
+	else if (n == 2)return 2;
 	else
 	{
 		return climbstairs(n - 1) + climbstairs(n - 2);
@@ -17,11 +17,11 @@ int climbstairs(int n)
 int main()
 {
 
-	//ÒÔÏÂÊÇµÚÁùÌâµÄ²âÊÔÓÃÀı
-	cout << "µÚÁùÌâ£º" << endl;
+	//ä»¥ä¸‹æ˜¯ç¬¬å…­é¢˜çš„æµ‹è¯•ç”¨ä¾‹
+	cout << "ç¬¬å…­é¢˜ï¼š" << endl;
 	int number, c_number;
 	cin >> number;
 	c_number = climbstairs(number);
-	cout << "ÅÀÂ¥ÌİµÄ°ì·¨ÓĞ£º" << c_number << "ÖÖ" << endl;
+	cout << "çˆ¬æ¥¼æ¢¯çš„åŠæ³•æœ‰ï¼š" << c_number << "ç§" << endl;
 	//......................................................................
 }
