@@ -1,8 +1,13 @@
 <center>
      <h1>王文卓</h1>
+<<<<<<< HEAD
      <div>
          <span>
 <center>
+=======
+</center>
+
+>>>>>>> upstream/master
 
  ##  个人信息 
 
