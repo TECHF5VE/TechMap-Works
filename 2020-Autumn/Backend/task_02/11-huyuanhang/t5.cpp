@@ -5,9 +5,9 @@ int main()
 {
 	int m = 0;
 	int n = 0;
-	cout << "****ÇëÊäÈëÅÅÊı: " << endl;
+	cout << "****è¯·è¾“å…¥è¡Œæ•°: " << endl;
 	cin >> m;
-	cout << "****ÇëÊäÈëÁĞÊı: " << endl;
+	cout << "****è¯·è¾“å…¥åˆ—æ•°: " << endl;
 	cin >> n;
 	int** arr = new int* [m];
 	for (int i = 0; i < m; i++)
