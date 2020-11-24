@@ -18,13 +18,12 @@ void text01(int m, int n, int q, int* arrA, int* arrB)
 			arrA[i + j + 1] = arrB[j];
 			j--;
 		}
-		while (j >= 0)//当B中有剩余的值时，将剩余的值赋到A中
-			          //若剩余的是A中的值，则直接在数组A中
-		{
-			arrA[j] = arrB[j];
-		}
-
 	}
+    while (j >= 0)//当B中有剩余的值时，将剩余的值赋到A中
+              //若剩余的是A中的值，则直接在数组A中
+    {
+        arrA[j] = arrB[j];
+    }
 }
 //第二道
 void text02(int** matrix, int n)
