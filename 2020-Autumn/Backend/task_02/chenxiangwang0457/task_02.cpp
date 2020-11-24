@@ -91,13 +91,16 @@ int main() {
 		}
 		printf("\n");
 	}
-	return 0;
+	
 	for (i = 0;i < t;i++)
 	{
 		free(arr[i]);
 	}
 	free(arr);
 	free(colmat);
+	
+	return 0;
+	
 }
 
 
