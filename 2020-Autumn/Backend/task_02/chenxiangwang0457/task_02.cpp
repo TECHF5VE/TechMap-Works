@@ -134,7 +134,7 @@ int* creatArray(int n)
 	}
 	pt = array;
 	return pt;
-	free(array);
+	
 }
 void main() {
 	int *p, i;
@@ -143,6 +143,7 @@ void main() {
 	{
 		printf("%d ", *(p + i));
 	}
+	free(array);
 }
 
 
@@ -181,10 +182,10 @@ void main() {
 		printf("\n");
 	}
 
-
-}
 for (i = 0;i < m;i++)
 	{
 		free(array[i]);
 	}
 	free(array);
+
+}
