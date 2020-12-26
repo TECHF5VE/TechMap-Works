@@ -46,7 +46,7 @@ int main()
         for (int j = 0; j < m; j++)
             nums[i][j] = arr[i][j];
     }
-    cout << "******ÒÔÏÂÊÇ²âÊÔÓÃÀý*******" << endl;
+    cout << "******ä»¥ä¸‹æ˜¯æµ‹è¯•ç”¨ä¾‹*******" << endl;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++)
             cout << nums[i][j] << " ";
