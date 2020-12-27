@@ -15,7 +15,7 @@ int** creatArray(int m, int n)
 	{
 		for (j = 0; j < n; j++)
 		{
-			scanf("%d", &array[i][j]);
+			array[i][j]=i*n+j+1;
 		}
 	}
 	pt = array;
