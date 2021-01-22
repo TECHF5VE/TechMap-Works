@@ -19,10 +19,10 @@ int countGoodTriplets(int* arr,int length,int a,int b,int c)
 int main()
 
 {
-	cout << "******ÒÔÏÂÎª²âÊÔÓÃÀý******" << endl; 
-	int*arr,length;
+	cout << "******ä»¥ä¸‹ä¸ºæµ‹è¯•ç”¨ä¾‹******" << endl; 
+	int*arr,length=0;//åœ¨devc++ä¸ŠæœªæŠ¥é”™ï¼Œåœ¨vsä¸Šå´æŠ¥é”™ï¼Œå—æ•™äº†ã€‚
 	arr=new int[length];
-	cout <<"ÇëÊäÈëÊý×é³¤¶È£º"; 
+	cout <<"è¯·è¾“å…¥æ•°ç»„é•¿åº¦ï¼š"; 
 	cin>>length;
 	for(int i=0;i<length;i++)
 	{
