@@ -2,15 +2,26 @@
 using namespace std;
 
 
+#include<iostream>
+using namespace std;
 int findNumbers(int* nums, int length) {
-	return length / 2;
+	int count = 0,n;
+	for (int i = 0; i < length; i++)
+	{
+		n = 1;
+		while (nums[i] /= 10)
+			n++;
+		if (n % 2 == 0)
+			count++;
+	}
+	return count;
 }
 int main()
 {
-	cout << "******ÒÔÏÂÎª²âÊÔÓÃÀı******" << endl;
+	cout << "******ä»¥ä¸‹ä¸ºæµ‹è¯•ç”¨ä¾‹******" << endl;
 	const int length = 5;
 	int arr[length] = { 12,345,2,6,7896 };
-	cout << "Êı×éÎª£º";
+	cout << "æ•°ç»„ä¸ºï¼š";
 	for (int i = 0; i < length; i++)
 	{
 		cout << arr[i] << " ";
@@ -22,7 +33,7 @@ int main()
 	{
 		nums[i] = arr[i];
 	}
-	cout << "Î»ÊıÎªÅ¼ÊıµÄÊı×ÖÓĞ£º" << findNumbers(nums, length) << "¸ö";
+	cout << "ä½æ•°ä¸ºå¶æ•°çš„æ•°å­—æœ‰ï¼š" << findNumbers(nums, length) << "ä¸ª";
 
 
 }
