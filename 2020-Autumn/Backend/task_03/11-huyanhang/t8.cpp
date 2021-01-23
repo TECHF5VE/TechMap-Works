@@ -54,16 +54,12 @@ int maximumGap(int* nums,int length)
 }
 int main()
 {
-    int* arr, length;
-    length = 5;
-    int arr1[5] = { 2,10,5,4,1 };
-    arr = new int[length];
+    int length= 5;
+    int arr[5] = { 2,10,5,4,1 };
+    cout << "******ä»¥ä¸‹æ˜¯æµ‹è¯•ç”¨ä¾‹ï¼š******" << endl;
+    cout << "åŸæ•°ç»„ä¸ºï¼š";
     for (int i = 0; i < length; i++)
-        arr[i] = arr1[i];
-    cout <<"******ÒÔÏÂÊÇ²âÊÔÓÃÀı£º******"<<endl;
-    cout <<"Ô­Êı×éÎª£º"; 
-   for (int i = 0; i < length; i++)
         cout << arr[i] << " ";
-        cout <<endl;
-    cout <<maximumGap(arr, length);
+    cout << endl;
+    cout << maximumGap(arr, length);
 }
