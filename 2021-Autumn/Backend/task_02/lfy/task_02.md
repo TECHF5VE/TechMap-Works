@@ -64,11 +64,11 @@ public static void  insert_sort(int array[],int lenth){
    int t;
    for(int i=0;i<lenth-1;i++){
        for(int j=i+1;j>0;j--){
-           if(array[j] < array[j-1]){
+           if(array[j] < array[j-1]){    //寻找该数在前面有序部分被插入的部分并插入
                temp = array[j-1];
                array[j-1] = array[j];
                array[j] = temp;
-           }else{         //不需要交换
+           }else{         //该数最大，不需要交换
                break;
            }
        }
@@ -226,14 +226,13 @@ public static void mergeArray(int a[],int first,int middle,int end,int temp[]){
 public static void MinHeapFixdown(int a[],int i,int n){
    int j = 2*i+1; //子节点
    int temp = 0;
-   while(j<n){
-       //在左右子节点中寻找最小的
+   while(j<n){        //在左右子节点中寻找最小的
        if(j+1<n && a[j+1]<a[j]){  
            j++;
        }
        if(a[i] <= a[j])
-           break;
-       //较大节点下移
+           break;   
+	//较大节点下移
        temp = a[i];
        a[i] = a[j];
        a[j] = temp;
@@ -251,6 +250,7 @@ public static void MakeMinHeap(int a[], int n){
 }
 ```
 ```
+//堆排序算法
 public static void MinHeap_sort(int a[],int n){
   int temp = 0;
   MakeMinHeap(a,n);
