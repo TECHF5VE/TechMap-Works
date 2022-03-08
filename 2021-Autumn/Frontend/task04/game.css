@@ -1,0 +1,50 @@
+.game {
+  background-color: white;
+  width: 60%;
+  padding:16px 20%;
+}
+
+.game_name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.game_menu a {
+  padding-right: 16px;
+}
+
+.game_background {
+  width: 60%;
+  float: left;
+}
+.game_background table {
+ border-collapse: collapse;
+}
+.game_background table td{
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.game_info {
+ width: 40%;
+ float: left;
+}
+
+.game_background table td img {
+ margin: 0;
+ padding: 0;
+}
+
+.red {
+ background-color: red;
+ width: 100%;
+ height:100%;
+}
+
+.black {
+ background-color: black;
+ width: 100%;
+ height:100%;
+}
