@@ -1,5 +1,5 @@
 *.pyc
 **/.vscode
 **/.idea
-
 .vs
+vs
