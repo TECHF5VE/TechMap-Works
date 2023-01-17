@@ -1,15 +1,23 @@
 # 1. ***自我介绍***
+
 ### [这是我的QQ空间，点进来看看吧](https://user.qzone.qq.com/1262990154/main)
+
 ##### ~~别忘给我空间点个赞哦~~
+
 ---
+
 - *姓名：赵非凡*
 - *性别：男*
 - *年龄：18*
 - *爱好：唱跳rap篮球*
 - *专业：物联网*
+
 ---
+
 # 2.这是我第一次设计的网页代码 
+
 - ### 这是HTML部分
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +31,9 @@
 </body>
 </html>
 ```
+
 - ### 这是css部分
+
 ```
 body {
     background-color: black;
@@ -77,16 +87,22 @@ a:hoverz::before{
     }
 }
 ```
+
 - ### 展示效果如下图
 
->![不会用图床所以随便找了个图片哈哈不知道为什么预览页面图片显示不出来]("https://pic3.zhimg.com/v2-58d652598269710fa67ec8d1c88d8f03_r.jpg?source=1940ef5c")
+>![不会用图床所以随便找了个图片哈哈不知道为什么预览页面图片显示不出来](https://pic3.zhimg.com/v2-58d652598269710fa67ec8d1c88d8f03_r.jpg?source=1940ef5c)
+
 ---
+
 # 3. 个人信息
 身高|体重|学历|
 :-:|:-:|:-:|
 170|54|本科
+
 ---
+
 # 4.按照流程来评价一下吧
+
 ```flow
 st=>start: please start your review
 op=>operation: Is my first markdown a good try?
@@ -95,4 +111,4 @@ e=>end: thanks
 st->op->cond
 cond(yes)->e
 cond(no)->op
-&```
+```
