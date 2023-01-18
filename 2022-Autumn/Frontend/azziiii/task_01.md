@@ -1,6 +1,8 @@
-#azziiiii所抄袭的MarkDown语法
+# azziiiii所抄袭的MarkDown语法
+
 ---
-##斜体与粗体
+
+## 斜体与粗体
 
 1.*斜体*
 
@@ -8,10 +10,11 @@
 
 3.***加粗斜体***
 
-4.~~删除线~~    
+4.~~删除线~~
 
 ---
-##2.分级标题
+
+## 2.分级标题
 
 1.# 一级标题
 
@@ -36,8 +39,11 @@
 
 [1]:https://github.com
 ---
-##4.列表
+
+## 4.列表
+
 1.无序列表
+
 - 无序列表  
   
 2.有序列表
@@ -52,7 +58,7 @@ Markdown
 
 4.列表缩进
 
-*    只因你太美 baby 只因你太美 baby
+- 只因你太美 baby 只因你太美 baby
 只因你实在是太美 baby 只因你太美 baby
 迎面走来的你让我如此蠢蠢欲动
 这种感觉我从未有
@@ -64,18 +70,21 @@ Cause I got a crush on you who you
 不管走到哪里都会想起的人是你 you you
 
 ---
-##5.引用
+
+## 5.引用
 
 >芝士引用
 >>芝士嵌套引用
 
 ---
-##6.图像
 
-![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg )
+## 6.图像
+
+![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg)
 
 ---
-##7.注脚
+
+## 7.注脚
 
 使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
 
@@ -86,11 +95,15 @@ Cause I got a crush on you who you
 [^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
 
 ---
-##8.公式
+
+## 8.公式
+
 牛顿第二定律方程：$G=m*g$
 
 ---
-##9.表格
+
+## 9.表格
+
 |学号|姓名|分数|
 |:-:|:-:|:-:|
 |小明 |男|75|
@@ -98,11 +111,14 @@ Cause I got a crush on you who you
 |小陆|男|92|
 
 ---
-##9.代码
+
+## 10.代码
+
 `
 cin>>hello world!>>endl;
 `
-``` c
+
+```c
 #include<stdio.h>
 int main()
 {
