@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 333
+mybatis-plus:
+  type-aliases-package: com.xizhe.entity # ±ðÃûÉ¨Ãè°ü
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.hmdp: debug
