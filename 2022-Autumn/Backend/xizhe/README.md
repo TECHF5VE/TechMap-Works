@@ -7,5 +7,5 @@
     + 使用springboot + mp + mysql 实现简单查询操作
     + sql文件放在resources目录下
  
- 3. 20-软件-李昊
+ 3. 20-软件-李昊 
  
